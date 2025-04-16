@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containr{
+    width: 90vw;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row-reverse;
+   padding: 30px;
+   margin: auto;
+}
+.containr .food input{
+    width: 70%;
+    margin: 0px 80px;
+    padding: 10px;
+    text-align: right;
+}
+.containr .food{
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+}
+.containr .food .cards{
+    margin: 30px 100px;
+    display: flex;
+   flex-wrap: wrap;
+   gap:20px;
+   margin-bottom: 10px;
+}
+.containr .food .cards .card{
+   width: 5vw;
+   text-align: center;
+   padding: 10px;
+   background: #f9f8f8;
+   box-shadow: 2px 2px 4px #ddd;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   cursor: pointer;
+}
+.containr .food .cards .card img{
+    width: 100%;
+    margin: auto;
+}
+.containr .food .cards .card h3{
+    color: rgb(30, 30, 30);
+    font-size: 10px;
+}
+.containr .food .cards .card h4{
+    color:#68a494;
+}
+.containr .food .items{
+    width: 40vw;
+    display: flex;
+    text-align: center;
+    margin: 10px;
+}
+.containr .food .items .item{
+   width: 100px;
+   border: 1px solid #05976a;
+   color: #05976a;
+   padding: 20px;
+   margin: 5px;
+   font-size: 12px;
+   cursor: pointer;
+}
+.containr .food .items .lastChild{
+    color: #fff;
+background: #05976a;
+ }
+ .containr .select-order {
+    display: block;
+    direction: rtl;
+  }
+  .containr .select-order p{
+    margin-bottom: 30px;
+  }
+  .containr .select-order button{
+    margin:20px;
+    padding: 10px;
+    background: #05976a;
+    cursor: pointer;
+    border: none;
+  }
+.containr .select-order ,
+.containr .insert-order{
+    width: 22vw;
+    border-right: 2px solid #ddd;
+    margin-right: 20px;
+    padding: 10px 30px;
+}
+.containr .insert-order{
+    direction: rtl;
+}
+.containr .insert-order h5,
+.containr .insert-order h6{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .containr .insert-order h6{
+    color: red;
+    margin-bottom: 30px;
+  }
+  
+.containr .insert-order hr{
+   margin: 30px 0;
+}
+.containr .insert-order p{
+  margin-bottom: 20px;
+  word-spacing: 150px;
+}
+.containr .insert-order span{
+  float: left;
+}
+.containr .insert-order input{
+ margin:20px 50%;
+ padding: 10px 20px;
+ background: #05976a;
+ cursor: pointer;
+ border: none;
+}
+@media(max-width:900px){
+  .containr{
+    flex-direction:column;
+}
+.containr .food {
+  width: 100vw;
+}
+.containr .food .items{
+  display: none;
+}
+.containr .food .cards .card{
+ width: 8vw;
+}
+.containr .select-order, .containr .insert-order {
+  width: 85vw;
+  margin-top: 30px;
+}
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="containr">
+            <div class="food">
+                <input type="search" placeholder="بحث">
+                <div class="cards">
+                    <div class="card" onclick="showDetails('شيش طاووق')">
+                        <img src="image/Carrier.jpg" alt="">
+                        <h3>Carrier</h3>
+                        <h4>104 ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('تشكين مشوي')">
+                        <img src="image/Carspress.png" alt="">
+                        <h3>Carspress</h3>
+                        <h4>83ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('مولتن تشيز')">
+                        <img src="image/Cavity.png" alt="">
+                        <h3>Cavity</h3>
+                        <h4>90ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('ميرت')">
+                        <img src="image/Chicken  Cheese.png" alt="">
+                        <h3>Chicken</h3>
+                        <h4>107ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('كوتروفورماج')">
+                        <img src="image/Cotroformag.png" alt="">
+                        <h3>Cotroformag</h3>
+                        <h4>109ج.م</h4>
+                    </div>  
+                    <div class="card" onclick="showDetails(' سناكس')">
+                        <img src="image/Dandy.jpg" alt="">
+                        <h3>Dandy</h3>
+                        <h4>98ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('مشروم')">
+                        <img src="image/Friceco.png" alt="">
+                        <h3>Friceco</h3>
+                        <h4>116ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('بانيه')">
+                        <img src="image/Hawaii.png" alt="">
+                        <h3>Hawaii</h3>
+                        <h4>83ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('هاواي')">
+                        <img src="image/Horse.png" alt="">
+                        <h3>Horse</h3>
+                        <h4>111ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('شنغهاي')">
+                        <img src="image/Kurnish.jpg" alt="">
+                        <h3>Kurnish</h3>
+                        <h4>110ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('موتزاريلا')">
+                        <img src="image/Lahibo.png" alt="">
+                        <h3>Lahibo</h3>
+                        <h4>90ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('اسكندر')">
+                        <img src="image/Mert.png" alt="">
+                        <h3>Mert</h3>
+                        <h4>90ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('تشيكن & تشيز')">
+                        <img src="image/Mexican.png" alt="">
+                        <h3>Mexican</h3>
+                        <h4>90ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('فريسكو')">
+                        <img src="image/Mitdarila.png" alt="">
+                        <h3>Mitdarila</h3>
+                        <h4>91ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('اسبيشيال')">
+                        <img src="image/Mushrooms.jpg" alt="">
+                        <h3>Mushrooms</h3>
+                        <h4>110ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('داندي')">
+                        <img src="image/Shanghai.png" alt="">
+                        <h3>Shanghai</h3>
+                        <h4>100ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('مكسيكي')">
+                        <img src="image/Shelsh.png" alt="">
+                        <h3>Shelsh</h3>
+                        <h4>110ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('تشيلي')">
+                        <img src="image/Snacks.png" alt="">
+                        <h3>Snacks</h3>
+                        <h4>108ج.م</h4>
+                    </div>
+                    <div class="card" onclick="showDetails('كرسبر')">
+                        <img src="image/Two.png" alt="">
+                        <h3>Two</h3>
+                        <h4>111ج.م</h4>
+                    </div>
+                </div>
+                <div class="items">
+                     <img src="image/left arrow.jpg"width="40" alt="">
+                    <div class="item">دجاج</div>
+                    <div class="item">الاسماك</div>
+                    <div class="item">اللحوم</div>
+                    <div class="item">برجر</div>
+                    <div class="item">ميكسات</div>
+                    <div class="item">العروض</div>
+                    <div class="item">كبدة</div>
+                    <div class="item">وجبة الارز</div>
+                    <div class="item">وجبة الاطفال</div>
+                    <div class="item lastChild">الحلو</div>
+                    <img src="image/right arrow.jpg" width="40" alt="">
+                </div>
+            </div>
+            <div class="select-order">
+                <p>لا توجد بيانات  ادخلت </p>
+            </div>
+            <div class="insert-order">
+                <h5>ملخص الطلب</h5>
+                <h6>تفريغ السلة</h6>  
+                    <p><span class="price">الصنف </span> السعر</p>
+                <hr> 
+                <ul id="cart-items">
+                  
+                </ul> <!-- هنا ستظهر المنتجات مع الأسعار -->
+                <hr>
+                <div class="ul-footer">
+					<p>اجمالى<span id="total-price"> 0.00ج.م</span></p> <!-- إجمالي السعر في صف منفصل -->
+				</div>
+                <p>الاسم</p>
+                <p>الهاتف</p>
+                <p>العنوان</p>
+                <hr>
+                <p>ملاحظات</p>
+                <textarea  id="" cols="40" rows="4" placeholder="اضافة تعليق"></textarea><br>
+                <input type="submit" value="ارسال">
+            </div>
+        </div> 
+        <script src="script.js"></script>  
+    </body>
+</html>
